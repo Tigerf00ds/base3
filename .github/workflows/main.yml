@@ -24,11 +24,13 @@ jobs:
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
-          server: ftp.abhi4136.odns.fr
-          username:  06@01-web.formation-adapeco-sofip.com
-          password: aqFbABLGFz6wVhLe
+          server: ${{secrets.SERVER}}
+          username:  ${{secrets.USERNAME}}
+          password: ${{secrets.PASSWORD}}
           local-dir: dist/
           server-dir: /06/
+
+
 
           
 
