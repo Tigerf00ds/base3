@@ -3,7 +3,7 @@ name: Deploy to FTP
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
@@ -29,3 +29,5 @@ jobs:
           password: aqFbABLGFz6wVhLe
           local-dir: dist/
           server-dir: /06/
+
+          
